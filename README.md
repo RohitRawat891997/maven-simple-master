@@ -189,7 +189,7 @@ pipeline {
         stage('Download from Nexus') {
             steps {
                 sh """
-                curl -u admin:admin@123 -O \
+                curl -u admin:admin123 -O \
                 http://192.168.18.141:8081/repository/maven-releases/com/github/jitpack/maven-simple/0.2-SNAPSHOT/maven-simple-0.2-SNAPSHOT.jar
                 """
             }
