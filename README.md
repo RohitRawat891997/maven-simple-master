@@ -245,8 +245,8 @@ jenkins ALL=(ALL) NOPASSWD: /bin/systemctl restart nginx, /bin/rm, /bin/cp
 3. Uploads artifacts to Nexus
 4. Downloads artifact from Nexus
 5. Deploys artifact to **Tomcat**
-   <img width="657" height="344" alt="image" src="https://github.com/user-attachments/assets/9df45fde-0f19-44c6-93d8-b8b658d120dd" />
 
+<img width="657" height="344" alt="image" src="https://github.com/user-attachments/assets/9df45fde-0f19-44c6-93d8-b8b658d120dd" />
 
 ---
 
