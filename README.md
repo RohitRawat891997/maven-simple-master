@@ -86,12 +86,22 @@ Navigate to:
 * **Name**: `M3`
 * **MAVEN\_HOME**: `/usr/share/maven`
 
+<img width="1072" height="560" alt="image" src="https://github.com/user-attachments/assets/b13d000c-6865-4bb5-8c2c-e63327f20277" />
+
+
 ---
 
 ### 8. Add Global Maven Settings
 
 Navigate to:
 `Manage Jenkins -> Managed Files -> Add new config (Global Maven settings.xml)`
+
+<img width="1078" height="179" alt="image" src="https://github.com/user-attachments/assets/5873f310-8f5c-4d53-a353-4dd0bf900486" />
+<img width="1079" height="545" alt="image" src="https://github.com/user-attachments/assets/3c782c10-a2cb-4a37-a734-6968ed2cddad" />
+
+
+
+<img width="1079" height="524" alt="image" src="https://github.com/user-attachments/assets/6d7988d7-a204-498c-976e-835f52901f87" />
 
 Add content from line no 112:
 
