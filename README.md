@@ -132,9 +132,10 @@ chown -R jenkins:jenkins /var/lib/jenkins/.m2
 sudo chmod -R 755 /var/lib/jenkins/.m2
 vim /var/lib/jenkins/.m2/settings.xml
 ```
-```
+
 **Output should be....**
 
+```
 [root@node1 ~]#
 [root@node1 ~]# ls  -ld    /var/lib/jenkins/.m2
 drwxr-xr-x. 3 jenkins jenkins 44 Sep 23 14:01 /var/lib/jenkins/.m2
