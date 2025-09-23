@@ -93,7 +93,7 @@ Navigate to:
 Navigate to:
 `Manage Jenkins -> Managed Files -> Add new config (Global Maven settings.xml)`
 
-Add content:
+Add content from line no 112:
 
 ```xml
 <servers>
@@ -152,6 +152,15 @@ Add:
 
 Edit `POM.xml` with server IP (example: `192.168.18.141`).
 
+```
+vim  pom.xml
+
+line no = 32:-  <url>http://192.168.18.141:8081/repository/maven-releases/</url>
+line no = 36:-  <url>http://192.168.18.141:8081/repository/maven-snapshots/</url>
+line no = 206:- <url>http://192.168.18.141:8081/repository/maven-releases/</url>
+line no = 210:- <url>http://192.168.18.141:8081/repository/maven-snapshots/</url>
+
+```
 ---
 
 ### 11. Jenkinsfile (Pipeline Script)
@@ -168,7 +177,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/rohitrawat891997/register-app.git'
+                git branch: 'main', url: 'https://github.com/rohitrawat891997/maven-simple-master.git'
             }
         }
 
@@ -190,7 +199,7 @@ pipeline {
             steps {
                 sh """
                 curl -u admin:admin123 -O \
-                http://192.168.18.141:8081/repository/maven-releases/com/github/jitpack/maven-simple/0.2-SNAPSHOT/maven-simple-0.2-SNAPSHOT.jar
+                http://192.168.18.141:8081/repository/maven-releases/com/github/jitpack/maven-simple/0.2-SNAPSHOT/maven-simple-0.2-SNAPSHOT.war
                 """
             }
         }
