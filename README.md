@@ -249,6 +249,7 @@ usermod -aG docker  $USER
 usermod -aG docker jenkins
 newgrp
 systemctl restart docker
+systemctl restart jenkins
 
 ```
 
@@ -280,7 +281,7 @@ jenkins ALL=(ALL) NOPASSWD: /bin/systemctl restart nginx, /bin/rm, /bin/cp
 4. Downloads artifact from Nexus
 5. Deploys artifact to **Tomcat**
 
-   URL:- http://localhost:8082/webapp
+   URL:- http://<public ip>:8082/webapp
 
 <img width="657" height="344" alt="image" src="https://github.com/user-attachments/assets/9df45fde-0f19-44c6-93d8-b8b658d120dd" />
 
