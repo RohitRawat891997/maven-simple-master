@@ -133,7 +133,7 @@ sudo chmod -R 755 /var/lib/jenkins/.m2
 vim /var/lib/jenkins/.m2/settings.xml
 ```
 ```
-output should be....
+**Output should be....**
 
 [root@node1 ~]#
 [root@node1 ~]# ls  -ld    /var/lib/jenkins/.m2
